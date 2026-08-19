@@ -5,6 +5,7 @@
 - [x] Source regression suite passes.
 - [x] Installed-wheel regression suite passes.
 - [x] Python source/benchmark scripts compile.
+- [x] GitHub Actions tests/builds pass on Python 3.10, 3.11, 3.12, and 3.13.
 - [x] Wheel metadata/version/runtime version agree.
 - [x] Wheel RECORD hashes verify.
 - [x] Wheel/source release builds are deterministic.
@@ -36,6 +37,6 @@
 - [x] MIT license present.
 - [x] `CITATION.cff` present for GitHub/Zenodo metadata assistance.
 - [x] GitHub CI and manual trusted-publishing workflow present.
-- [ ] GitHub repository created/pushed by the author.
+- [x] GitHub repository created and verified source tree deployed.
 - [ ] PyPI Trusted Publisher/environment configured by the author.
 - [ ] Zenodo deposit/release created by the author.
