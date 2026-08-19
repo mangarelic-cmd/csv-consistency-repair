@@ -17,6 +17,8 @@ This release-candidate pass was performed after the cumulative-knowledge change 
 - Public benchmark scripts and committed example reports contain no development-machine absolute paths.
 - Locked functional benchmark paths are repository-relative and every corpus SHA-256 is revalidated by the test suite.
 - Secret/private-key pattern scan: 0 hits.
+- GitHub Actions release matrix: **Python 3.10, 3.11, 3.12, and 3.13 all passed tests and package build**.
+- The first public CI matrix exposed a Python 3.10-only test dependency issue (`tomllib`); it was corrected with a `tomli` compatibility fallback and the full matrix was rerun green before release. Runtime repair code was unchanged by this fix.
 
 ## Idempotence
 
@@ -56,4 +58,4 @@ Other replayed checks:
 
 ## Publication status
 
-The release files are technically ready for a GitHub repository/release and a Zenodo software deposit. The wheel is technically ready for PyPI upload. External account-side actions are intentionally not claimed as verified: repository creation, PyPI package-name availability and Trusted Publisher configuration, and the Zenodo deposit itself require the author's platform accounts. An independent third-party real-world benchmark also remains open and is not represented as completed.
+The verified source tree is deployed to the public GitHub repository at https://github.com/mangarelic-cmd/csv-consistency-repair and the GitHub Actions Python 3.10–3.13 matrix is green. The release files are technically ready for a GitHub tag/release and a Zenodo software deposit. The wheel is technically ready for PyPI upload. External account-side actions not yet claimed as verified are PyPI package-name availability and Trusted Publisher configuration, the GitHub release/tag action, and the Zenodo deposit itself. An independent third-party real-world benchmark also remains open and is not represented as completed.
