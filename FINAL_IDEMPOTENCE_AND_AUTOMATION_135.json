@@ -1,0 +1,78 @@
+{
+  "initial_auto": {
+    "edits": 3,
+    "status": "STABLE_WITH_REPORTED_ISSUES",
+    "forward": true,
+    "inverse": true
+  },
+  "idempotence_auto": [
+    {
+      "run": 0,
+      "counted": false,
+      "edits": 0,
+      "same_bytes": true,
+      "status": "STABLE_WITH_REPORTED_ISSUES",
+      "forward": true,
+      "inverse": true
+    },
+    {
+      "run": 1,
+      "counted": true,
+      "edits": 0,
+      "same_bytes": true,
+      "status": "STABLE_WITH_REPORTED_ISSUES",
+      "forward": true,
+      "inverse": true
+    },
+    {
+      "run": 2,
+      "counted": true,
+      "edits": 0,
+      "same_bytes": true,
+      "status": "STABLE_WITH_REPORTED_ISSUES",
+      "forward": true,
+      "inverse": true
+    },
+    {
+      "run": 3,
+      "counted": true,
+      "edits": 0,
+      "same_bytes": true,
+      "status": "STABLE_WITH_REPORTED_ISSUES",
+      "forward": true,
+      "inverse": true
+    }
+  ],
+  "safe_mode": {
+    "first_edits": 1,
+    "repeats": [
+      {
+        "edits": 0,
+        "same_bytes": true,
+        "forward": true,
+        "inverse": true
+      },
+      {
+        "edits": 0,
+        "same_bytes": true,
+        "forward": true,
+        "inverse": true
+      }
+    ]
+  },
+  "stream": {
+    "first_edits": 4,
+    "second_edits": 0,
+    "idempotent_bytes": true,
+    "undo_exact_bytes": true,
+    "replay": true
+  },
+  "bundle": {
+    "first_edits": 15,
+    "first_state": "COMMITTED",
+    "repeat_edits": 0,
+    "repeat_state": "COMMITTED",
+    "repeat_exact": true
+  },
+  "overall_pass": true
+}

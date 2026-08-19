@@ -1,0 +1,7 @@
+ customer_id ,active,amount,note
+A001,YES,10.00,ok
+ A002 ,true,20.00, NA 
+A002,true,20.00,
+A003,No,30.00,null
+A003,No,30.00,null
+A004,MAYBE,40.00,ok

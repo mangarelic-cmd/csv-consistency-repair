@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-consistency-repair"
+version = "1.3.5"
+description = "Conservative automatic CSV repair with formula discovery, missing-value recovery, reversible edits, multi-file reconciliation, and replay verification."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Son D. Bolduc"}]
+keywords = [
+  "csv", "data-cleaning", "data-repair", "data-quality", "schema-validation",
+  "duplicate-detection", "data-reconciliation", "etl", "spreadsheet", "validation",
+  "missing-values", "formula-discovery", "csv-repair"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build>=1", "twine>=5"]
+benchmark = ["pandas>=2"]
+
+[project.scripts]
+csv-consistency-repair = "csv_consistency_repair.cli:main"
+csv-consistency-benchmark = "csv_consistency_repair.benchmark_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+csv_consistency_repair = ["py.typed", "GUIDE_LLM.md", "GUIDE_HUMAN.md", "AUTHOR.md"]

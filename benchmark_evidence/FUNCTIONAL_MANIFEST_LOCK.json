@@ -1,0 +1,503 @@
+{
+  "seed": 20260819,
+  "cases": [
+    {
+      "id": "local0",
+      "family": "local",
+      "dirty": "corpus/local0.dirty.csv",
+      "clean": "corpus/local0.clean.csv",
+      "config": {
+        "normalize_booleans": true,
+        "normalize_null_markers": true
+      },
+      "dirty_sha256": "cee3eb7c80c2aae89362929e91e023d3c8ec495bc2887f445a59e067eb4e78aa",
+      "clean_sha256": "091ae2f8206506cb102965cb9ffba7efb26739e2d84b45b30c41c69dae03fb1c"
+    },
+    {
+      "id": "local1",
+      "family": "local",
+      "dirty": "corpus/local1.dirty.csv",
+      "clean": "corpus/local1.clean.csv",
+      "config": {
+        "normalize_booleans": true,
+        "normalize_null_markers": true
+      },
+      "dirty_sha256": "cee3eb7c80c2aae89362929e91e023d3c8ec495bc2887f445a59e067eb4e78aa",
+      "clean_sha256": "091ae2f8206506cb102965cb9ffba7efb26739e2d84b45b30c41c69dae03fb1c"
+    },
+    {
+      "id": "local2",
+      "family": "local",
+      "dirty": "corpus/local2.dirty.csv",
+      "clean": "corpus/local2.clean.csv",
+      "config": {
+        "normalize_booleans": true,
+        "normalize_null_markers": true
+      },
+      "dirty_sha256": "cee3eb7c80c2aae89362929e91e023d3c8ec495bc2887f445a59e067eb4e78aa",
+      "clean_sha256": "091ae2f8206506cb102965cb9ffba7efb26739e2d84b45b30c41c69dae03fb1c"
+    },
+    {
+      "id": "numcorr0",
+      "family": "numeric_corruption",
+      "dirty": "corpus/numcorr0.dirty.csv",
+      "clean": "corpus/numcorr0.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "4e47b8c25953038395d3afcf1d2d13b8ab2f731a563b37edcaf4b0b20ca927c1",
+      "clean_sha256": "994b3d4a2c0526d4f8c3fd6683a7112079586dd282358d0849da479606d64980"
+    },
+    {
+      "id": "numcorr1",
+      "family": "numeric_corruption",
+      "dirty": "corpus/numcorr1.dirty.csv",
+      "clean": "corpus/numcorr1.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "04b720a088038756fb65e7f93484676dd384f64d1aa85fa92f5c477c013fed22",
+      "clean_sha256": "8cb3cd62e8ead17a3bc02ef5652a0bbbf51cb175f7b1d7d94ee44b55239afa4b"
+    },
+    {
+      "id": "numcorr2",
+      "family": "numeric_corruption",
+      "dirty": "corpus/numcorr2.dirty.csv",
+      "clean": "corpus/numcorr2.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "509c60371d890853542101f5066da4305fd99319f0cc787e08d9298caba18183",
+      "clean_sha256": "0f85ecc02da349c3ce002801fbc4cd6053fbf26a197b1ceef1e82e88c76fa0de"
+    },
+    {
+      "id": "nummiss0",
+      "family": "numeric_missing",
+      "dirty": "corpus/nummiss0.dirty.csv",
+      "clean": "corpus/nummiss0.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "repair_missing_values": true,
+        "numeric_missing_min_constraints": 1,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "f14f4e32800fd96d5076d8d6f0016c0e677607a7192c1efc06d54939a0c99d04",
+      "clean_sha256": "d3c9c59710d56b36e17c04d95f11deb10fcc8243d8f4a019557b6a9929a1f81e"
+    },
+    {
+      "id": "nummiss1",
+      "family": "numeric_missing",
+      "dirty": "corpus/nummiss1.dirty.csv",
+      "clean": "corpus/nummiss1.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "repair_missing_values": true,
+        "numeric_missing_min_constraints": 1,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "1df79408fc384a4bdd0dcb7d9fd9933a1e7d1b858d65266b5bbd88915851794c",
+      "clean_sha256": "8cac49c2aeeaf42015a356cb7703300454372736276885208c2fcae8f444e168"
+    },
+    {
+      "id": "nummiss2",
+      "family": "numeric_missing",
+      "dirty": "corpus/nummiss2.dirty.csv",
+      "clean": "corpus/nummiss2.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "repair_missing_values": true,
+        "numeric_missing_min_constraints": 1,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "a8999306f4cc4842650638094d427b3608df291657ef2c1653b7da3e5e32b158",
+      "clean_sha256": "4ec4b55bd9ae74e7418baefe0a2f5ef06244aa23021583c1ed4abb7f77fcf724"
+    },
+    {
+      "id": "scope0",
+      "family": "scoped",
+      "dirty": "corpus/scope0.dirty.csv",
+      "clean": "corpus/scope0.clean.csv",
+      "config": {
+        "discover_scoped_relations": true,
+        "repair_scoped_missing": true,
+        "repair_missing_values": true,
+        "scope_min_rows": 12,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "4fec394cdf4791c6ae10e6b3cbf1943ed952029529bfacf8aa95470c7718035f",
+      "clean_sha256": "bca5ca53875c008278210976fa05c8bd7c3cff9baa536f7cd12b744cf0b9949c"
+    },
+    {
+      "id": "scope1",
+      "family": "scoped",
+      "dirty": "corpus/scope1.dirty.csv",
+      "clean": "corpus/scope1.clean.csv",
+      "config": {
+        "discover_scoped_relations": true,
+        "repair_scoped_missing": true,
+        "repair_missing_values": true,
+        "scope_min_rows": 12,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "4fec394cdf4791c6ae10e6b3cbf1943ed952029529bfacf8aa95470c7718035f",
+      "clean_sha256": "bca5ca53875c008278210976fa05c8bd7c3cff9baa536f7cd12b744cf0b9949c"
+    },
+    {
+      "id": "scope2",
+      "family": "scoped",
+      "dirty": "corpus/scope2.dirty.csv",
+      "clean": "corpus/scope2.clean.csv",
+      "config": {
+        "discover_scoped_relations": true,
+        "repair_scoped_missing": true,
+        "repair_missing_values": true,
+        "scope_min_rows": 12,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "4fec394cdf4791c6ae10e6b3cbf1943ed952029529bfacf8aa95470c7718035f",
+      "clean_sha256": "bca5ca53875c008278210976fa05c8bd7c3cff9baa536f7cd12b744cf0b9949c"
+    },
+    {
+      "id": "temp0",
+      "family": "temporal",
+      "dirty": "corpus/temp0.dirty.csv",
+      "clean": "corpus/temp0.clean.csv",
+      "config": {
+        "discover_temporal_constraints": true,
+        "repair_temporal_missing": true,
+        "repair_missing_values": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "b8df8c22ff0fdd51ca750e390402fcdb635a417bbf287002e5ee9c290febf829",
+      "clean_sha256": "7b7ab0ffef0606e812c9e053c18dc2f156e8a3b1e3b050fd086574e429ff7b65"
+    },
+    {
+      "id": "temp1",
+      "family": "temporal",
+      "dirty": "corpus/temp1.dirty.csv",
+      "clean": "corpus/temp1.clean.csv",
+      "config": {
+        "discover_temporal_constraints": true,
+        "repair_temporal_missing": true,
+        "repair_missing_values": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "b8df8c22ff0fdd51ca750e390402fcdb635a417bbf287002e5ee9c290febf829",
+      "clean_sha256": "7b7ab0ffef0606e812c9e053c18dc2f156e8a3b1e3b050fd086574e429ff7b65"
+    },
+    {
+      "id": "temp2",
+      "family": "temporal",
+      "dirty": "corpus/temp2.dirty.csv",
+      "clean": "corpus/temp2.clean.csv",
+      "config": {
+        "discover_temporal_constraints": true,
+        "repair_temporal_missing": true,
+        "repair_missing_values": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "b8df8c22ff0fdd51ca750e390402fcdb635a417bbf287002e5ee9c290febf829",
+      "clean_sha256": "7b7ab0ffef0606e812c9e053c18dc2f156e8a3b1e3b050fd086574e429ff7b65"
+    },
+    {
+      "id": "seq0",
+      "family": "sequential",
+      "dirty": "corpus/seq0.dirty.csv",
+      "clean": "corpus/seq0.clean.csv",
+      "config": {
+        "discover_sequential_constraints": true,
+        "repair_sequential_missing": true,
+        "repair_missing_values": true,
+        "sequential_min_rows": 16,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "32d507145722ce7ced4cf0b4ac2b2985ea183acf694bdcf2ae1f50e86259a7c1",
+      "clean_sha256": "497503d741d5aa379b18b2c2f2fad768260b6f020ddfd371a98cbd1f7dcc669f"
+    },
+    {
+      "id": "seq1",
+      "family": "sequential",
+      "dirty": "corpus/seq1.dirty.csv",
+      "clean": "corpus/seq1.clean.csv",
+      "config": {
+        "discover_sequential_constraints": true,
+        "repair_sequential_missing": true,
+        "repair_missing_values": true,
+        "sequential_min_rows": 16,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "a32b43adab6a31c86a42dfe62b59914c35c196e55583ed1dad90c416eb4b87fb",
+      "clean_sha256": "2b892ae44b0fe8b8f780ca356840a57b2b8f7c99007e6a6fd00f65df127a7ee1"
+    },
+    {
+      "id": "seq2",
+      "family": "sequential",
+      "dirty": "corpus/seq2.dirty.csv",
+      "clean": "corpus/seq2.clean.csv",
+      "config": {
+        "discover_sequential_constraints": true,
+        "repair_sequential_missing": true,
+        "repair_missing_values": true,
+        "sequential_min_rows": 16,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "67c1bf3904836205ce75a8c4bb71e9f82561e5e0d11ebf323d7d3b1a24f5d47a",
+      "clean_sha256": "e5fb3316c2737785727260697580b061229bb9af4758893670e411fe4feec315"
+    },
+    {
+      "id": "fd0",
+      "family": "fd2",
+      "dirty": "corpus/fd0.dirty.csv",
+      "clean": "corpus/fd0.clean.csv",
+      "config": {
+        "discover_relationships": true,
+        "repair_discovered_relationships": true,
+        "repair_missing_values": true,
+        "discovery_max_determinant_columns": 2,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "070a7c03b41147a91831f1a35f2d7c925cc1ef75f13f466e961a232778dd0752",
+      "clean_sha256": "a49d3f64b5f37e241a97636b012bacdec396b242333638bbfb14c7c44105bd1e"
+    },
+    {
+      "id": "fd1",
+      "family": "fd2",
+      "dirty": "corpus/fd1.dirty.csv",
+      "clean": "corpus/fd1.clean.csv",
+      "config": {
+        "discover_relationships": true,
+        "repair_discovered_relationships": true,
+        "repair_missing_values": true,
+        "discovery_max_determinant_columns": 2,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "77904884d39238499a0294b17a3fe0c7d5816189ce0e94bbf86ac528ba6eeea7",
+      "clean_sha256": "a855375657457488d3e0c55f4024205376e16d86a59ec4e7c49918c1dcfb37ad"
+    },
+    {
+      "id": "fd2",
+      "family": "fd2",
+      "dirty": "corpus/fd2.dirty.csv",
+      "clean": "corpus/fd2.clean.csv",
+      "config": {
+        "discover_relationships": true,
+        "repair_discovered_relationships": true,
+        "repair_missing_values": true,
+        "discovery_max_determinant_columns": 2,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "953022896524b67e75c1bc57aa90f963fd0298a40e5ee0f741fd889c696890bb",
+      "clean_sha256": "74134fcc3f89287764fd5a21eaf4ab6a5c70569b62bc6b03b7258228ab712c1f"
+    },
+    {
+      "id": "lr0",
+      "family": "lowrank",
+      "dirty": "corpus/lr0.dirty.csv",
+      "clean": "corpus/lr0.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_low_rank_missing": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "b2ba886ecf122f971801567bf4c609259a5b04e52ad4d73727227bf74b83f8e1",
+      "clean_sha256": "bcaf8536e67b4389b13018cfe5ec1893bec130238e5a307243f95e8bc2e10111"
+    },
+    {
+      "id": "lr1",
+      "family": "lowrank",
+      "dirty": "corpus/lr1.dirty.csv",
+      "clean": "corpus/lr1.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_low_rank_missing": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "4815c0f39c7f6068a0fd8dbd09ae4158ce5065ccd50c27dbc6e3d0ce384ea7c8",
+      "clean_sha256": "056b53989d50c7b9a5a121a9e95fe683a36dd56f2fd938d3691767556ecc9a04"
+    },
+    {
+      "id": "lr2",
+      "family": "lowrank",
+      "dirty": "corpus/lr2.dirty.csv",
+      "clean": "corpus/lr2.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_low_rank_missing": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "aed536f833515ca29ef2493c76215499d29c72d780da5a29b5c6f7e4cee1df22",
+      "clean_sha256": "8b500f4d3e03b00d0abeecce38d91a18572a12368861b3cafe7a3098dc7b5ed3"
+    },
+    {
+      "id": "loc0",
+      "family": "locale_header",
+      "dirty": "corpus/loc0.dirty.csv",
+      "clean": "corpus/loc0.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_headers": true,
+        "maxima_repair_locale_numbers": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "2df098f2fbb1099ab343503bf998946b5e5e66782f0fd4dcca98ea107e086be0",
+      "clean_sha256": "8e8a00f81a105f4f542bd02aca82a7ac01a1b2de0fc22e75d6a7fea40702333c"
+    },
+    {
+      "id": "loc1",
+      "family": "locale_header",
+      "dirty": "corpus/loc1.dirty.csv",
+      "clean": "corpus/loc1.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_headers": true,
+        "maxima_repair_locale_numbers": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "2df098f2fbb1099ab343503bf998946b5e5e66782f0fd4dcca98ea107e086be0",
+      "clean_sha256": "8e8a00f81a105f4f542bd02aca82a7ac01a1b2de0fc22e75d6a7fea40702333c"
+    },
+    {
+      "id": "loc2",
+      "family": "locale_header",
+      "dirty": "corpus/loc2.dirty.csv",
+      "clean": "corpus/loc2.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_headers": true,
+        "maxima_repair_locale_numbers": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "2df098f2fbb1099ab343503bf998946b5e5e66782f0fd4dcca98ea107e086be0",
+      "clean_sha256": "8e8a00f81a105f4f542bd02aca82a7ac01a1b2de0fc22e75d6a7fea40702333c"
+    },
+    {
+      "id": "row0",
+      "family": "row_alignment",
+      "dirty": "corpus/row0.dirty.csv",
+      "clean": "corpus/row0.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_row_alignment": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "a1b8b15ba713db60ecf9c51fc137d4e1ee057257a0cb8c936e1e11ffcaadfa87",
+      "clean_sha256": "67896c4091986187bc0754e9715f994a9f9e3ed26fa74488c30678567a4079bb"
+    },
+    {
+      "id": "row1",
+      "family": "row_alignment",
+      "dirty": "corpus/row1.dirty.csv",
+      "clean": "corpus/row1.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_row_alignment": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "a1b8b15ba713db60ecf9c51fc137d4e1ee057257a0cb8c936e1e11ffcaadfa87",
+      "clean_sha256": "67896c4091986187bc0754e9715f994a9f9e3ed26fa74488c30678567a4079bb"
+    },
+    {
+      "id": "row2",
+      "family": "row_alignment",
+      "dirty": "corpus/row2.dirty.csv",
+      "clean": "corpus/row2.clean.csv",
+      "config": {
+        "maxima50": true,
+        "maxima_repair": true,
+        "maxima_repair_row_alignment": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "a1b8b15ba713db60ecf9c51fc137d4e1ee057257a0cb8c936e1e11ffcaadfa87",
+      "clean_sha256": "67896c4091986187bc0754e9715f994a9f9e3ed26fa74488c30678567a4079bb"
+    },
+    {
+      "id": "clean0",
+      "family": "clean",
+      "dirty": "corpus/clean0.dirty.csv",
+      "clean": "corpus/clean0.clean.csv",
+      "config": {
+        "safe_mode": true
+      },
+      "dirty_sha256": "f2eef375fef0972d2f6841a9e3f662fa1f38242cbad5e6aef8e1271e7472e7d4",
+      "clean_sha256": "f2eef375fef0972d2f6841a9e3f662fa1f38242cbad5e6aef8e1271e7472e7d4"
+    },
+    {
+      "id": "clean1",
+      "family": "clean",
+      "dirty": "corpus/clean1.dirty.csv",
+      "clean": "corpus/clean1.clean.csv",
+      "config": {
+        "safe_mode": true
+      },
+      "dirty_sha256": "72580a192e9088387ebda6f90ef8943bf0e09e54fbc8bb85c43586d5264ad988",
+      "clean_sha256": "72580a192e9088387ebda6f90ef8943bf0e09e54fbc8bb85c43586d5264ad988"
+    },
+    {
+      "id": "clean2",
+      "family": "clean",
+      "dirty": "corpus/clean2.dirty.csv",
+      "clean": "corpus/clean2.clean.csv",
+      "config": {
+        "safe_mode": true
+      },
+      "dirty_sha256": "b1286d3c526bd5e0413df9d7fa1bb9d73d3f711b403120f5c61b0072ac305347",
+      "clean_sha256": "b1286d3c526bd5e0413df9d7fa1bb9d73d3f711b403120f5c61b0072ac305347"
+    },
+    {
+      "id": "amb0",
+      "family": "ambiguous",
+      "dirty": "corpus/amb0.dirty.csv",
+      "clean": "corpus/amb0.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "00b265502a8eae5dfc93947dfbb560c55a8c5de95e57d2ac0b93526e83cc4e7c",
+      "clean_sha256": "38fc1205d32ed0aac1470516988ee40dd58a359a0771e8647ee31d00bd56c47c"
+    },
+    {
+      "id": "amb1",
+      "family": "ambiguous",
+      "dirty": "corpus/amb1.dirty.csv",
+      "clean": "corpus/amb1.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "00b265502a8eae5dfc93947dfbb560c55a8c5de95e57d2ac0b93526e83cc4e7c",
+      "clean_sha256": "38fc1205d32ed0aac1470516988ee40dd58a359a0771e8647ee31d00bd56c47c"
+    },
+    {
+      "id": "amb2",
+      "family": "ambiguous",
+      "dirty": "corpus/amb2.dirty.csv",
+      "clean": "corpus/amb2.clean.csv",
+      "config": {
+        "discover_numeric_constraints": true,
+        "repair_numeric_constraints": true,
+        "max_cycles": 6
+      },
+      "dirty_sha256": "00b265502a8eae5dfc93947dfbb560c55a8c5de95e57d2ac0b93526e83cc4e7c",
+      "clean_sha256": "38fc1205d32ed0aac1470516988ee40dd58a359a0771e8647ee31d00bd56c47c"
+    }
+  ]
+}

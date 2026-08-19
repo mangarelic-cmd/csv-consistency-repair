@@ -1,0 +1,35 @@
+{
+  "unique": ["order_id"],
+  "functional_dependencies": [
+    {
+      "determinant": ["customer_id"],
+      "dependent": "country",
+      "min_support": 3,
+      "min_confidence": 0.66,
+      "repair": true
+    }
+  ],
+  "row_formulas": [
+    {
+      "target": "total",
+      "expression": {"op": "sum", "columns": ["subtotal", "tax"]},
+      "tolerance": 0,
+      "repair": true
+    }
+  ],
+  "units": [
+    {
+      "column": "length",
+      "canonical": "m",
+      "aliases": {"cm": 0.01},
+      "repair": true
+    }
+  ],
+  "foreign_keys": [
+    {
+      "column": "customer_id",
+      "reference_file": "customers.csv",
+      "reference_column": "customer_id"
+    }
+  ]
+}

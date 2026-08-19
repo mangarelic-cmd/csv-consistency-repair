@@ -1,0 +1,59 @@
+{
+  "tool": "csv-consistency-repair",
+  "version": "0.2.0",
+  "input": "examples/declared_rules/customers.csv",
+  "output": "examples/declared_rules/bundle_out/customers.repaired.csv",
+  "config": {
+    "remove_exact_duplicates": false,
+    "normalize_null_markers": false,
+    "normalize_booleans": false,
+    "max_cycles": 8,
+    "stable_cycles_required": 2,
+    "dry_run": false,
+    "rules_path": null
+  },
+  "dialect": {
+    "delimiter": ",",
+    "quotechar": "\"",
+    "doublequote": false,
+    "escapechar": null,
+    "lineterminator": "\n"
+  },
+  "input_logical_digest": "04961756054fd664b2267109adc724afb8f61ffc6246d7a2f02e842d303cec3f",
+  "output_logical_digest": "04961756054fd664b2267109adc724afb8f61ffc6246d7a2f02e842d303cec3f",
+  "initial_score": 0.0,
+  "final_score": 0.0,
+  "score_delta": 0.0,
+  "strong_stable": true,
+  "stable_streak": 2,
+  "final_status": "PASS",
+  "committed_edits": [],
+  "rejected_candidates": [],
+  "cycles": [
+    {
+      "cycle": 1,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 1
+    },
+    {
+      "cycle": 2,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 2
+    }
+  ],
+  "remaining_issues": []
+}

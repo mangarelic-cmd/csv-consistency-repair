@@ -1,0 +1,92 @@
+{
+  "five_million": {
+    "tool_certified": {
+      "elapsed": "0:13.50",
+      "rss_kb": 123840,
+      "user_s": 45.72,
+      "system_s": 1.8,
+      "wall_s": 13.5,
+      "rows_read": 5000000,
+      "edits": 10000000,
+      "replay_pass": true,
+      "seconds": 12.602423608999743,
+      "rows_per_second": 396749.0821709374,
+      "parallel_workers": 4,
+      "logical_digest_format": "chunk-merkle-v1"
+    },
+    "tool_fast": {
+      "elapsed": "0:06.64",
+      "rss_kb": 123440,
+      "user_s": 21.17,
+      "system_s": 0.86,
+      "wall_s": 6.64,
+      "rows_read": 5000000,
+      "edits": 10000000,
+      "seconds": 5.7623231210000085,
+      "rows_per_second": 867705.5928672544,
+      "parallel_workers": 4
+    },
+    "python_csv": {
+      "elapsed": "0:08.68",
+      "rss_kb": 110468,
+      "user_s": 8.75,
+      "system_s": 0.28,
+      "wall_s": 8.68
+    },
+    "pandas_chunked": {
+      "elapsed": "0:15.38",
+      "rss_kb": 1085492,
+      "user_s": 13.85,
+      "system_s": 1.86,
+      "wall_s": 15.38
+    },
+    "byte_identical_all": true
+  },
+  "ten_million": {
+    "tool_certified": {
+      "elapsed": "0:24.18",
+      "rss_kb": 123276,
+      "user_s": 85.15,
+      "system_s": 3.91,
+      "wall_s": 24.18,
+      "rows_read": 10000000,
+      "rows_written": 10000000,
+      "edits": 20000000,
+      "replay_pass": true,
+      "seconds": 23.29866346100016,
+      "rows_per_second": 429209.1697336669,
+      "parallel_workers": 4,
+      "logical_digest_format": "chunk-merkle-v1",
+      "input_sha256": "d0ac729f78cc8223172eb2dd80851c36af1a617fc5558e6e8349b769900ef465",
+      "output_sha256": "6aa704adeb3e8f12d6af703b8c66b9d6d15e48edfcb84b55c3b7763a052fb215"
+    },
+    "tool_fast": {
+      "elapsed": "0:14.10",
+      "rss_kb": 123460,
+      "user_s": 41.11,
+      "system_s": 1.96,
+      "wall_s": 14.1,
+      "rows_read": 10000000,
+      "edits": 20000000,
+      "seconds": 10.760867426999994,
+      "rows_per_second": 929293.1139462877,
+      "parallel_workers": 4,
+      "logical_digest_format": "chunk-merkle-v1"
+    },
+    "python_csv": {
+      "elapsed": "0:17.87",
+      "rss_kb": 110528,
+      "user_s": 17.64,
+      "system_s": 0.59,
+      "wall_s": 17.87
+    },
+    "pandas_chunked": {
+      "elapsed": "0:33.69",
+      "rss_kb": 1238308,
+      "user_s": 31.56,
+      "system_s": 2.42,
+      "wall_s": 33.69
+    },
+    "byte_identical_all": true
+  }
+}

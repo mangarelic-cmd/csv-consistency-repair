@@ -1,0 +1,48 @@
+{
+  "tool": "csv-consistency-repair",
+  "version": "0.4.0",
+  "mode": "bundle",
+  "manifest": "examples/declared_rules/bundle.json",
+  "output_dir": "examples/declared_rules/repaired_bundle",
+  "dataset_count": 2,
+  "initial_score": 15.0,
+  "final_score": 0.0,
+  "score_delta": -15.0,
+  "committed_edits": 4,
+  "all_strong_stable": true,
+  "all_certified_for_configured_scope": true,
+  "datasets": [
+    {
+      "name": "customers",
+      "input": "examples/declared_rules/customers.csv",
+      "output": "examples/declared_rules/repaired_bundle/customers.repaired.csv",
+      "report": "examples/declared_rules/repaired_bundle/customers.repair.json",
+      "initial_score": 0.0,
+      "final_score": 0.0,
+      "final_status": "PASS",
+      "strong_stable": true,
+      "certified_for_configured_scope": true,
+      "forward_replay_pass": true,
+      "inverse_roundtrip_pass": true,
+      "format_preservation_pass": true,
+      "committed_edits": 0,
+      "remaining_issues": 0
+    },
+    {
+      "name": "orders",
+      "input": "examples/declared_rules/orders.csv",
+      "output": "examples/declared_rules/repaired_bundle/orders.repaired.csv",
+      "report": "examples/declared_rules/repaired_bundle/orders.repair.json",
+      "initial_score": 15.0,
+      "final_score": 0.0,
+      "final_status": "PASS",
+      "strong_stable": true,
+      "certified_for_configured_scope": true,
+      "forward_replay_pass": true,
+      "inverse_roundtrip_pass": true,
+      "format_preservation_pass": true,
+      "committed_edits": 4,
+      "remaining_issues": 0
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "summary": {
+    "cases": 30,
+    "unchanged": 30,
+    "mutation_cases": 0,
+    "total_edits": 0,
+    "mean_s": 0.10921746926639268
+  },
+  "cases": [
+    {
+      "id": 0,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.13450187499984168,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 1,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.13085197899999912,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 2,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.11902965999979642,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 3,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.1230769510002574,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 4,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.12788503999945533,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 5,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10633540299932065,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 6,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10746273100085091,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 7,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.11122161399907782,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 8,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.0992277360001026,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 9,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.11080547099845717,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 10,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10390567200010992,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 11,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.15494116499939992,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 12,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10133878799933882,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 13,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.1041704210001626,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 14,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.09793397599969467,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 15,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.11250532899975951,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 16,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10272331700070936,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 17,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10777615499864623,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 18,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10053027799949632,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 19,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10225945899946964,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 20,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10147037400020054,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 21,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10151638100069249,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 22,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.09929567699873587,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 23,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10286467299920332,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 24,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.09800216700023157,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 25,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10278139900037786,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 26,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10341589999916323,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 27,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.09825592400011374,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 28,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.10587317699901178,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    },
+    {
+      "id": 29,
+      "unchanged": true,
+      "edits": 0,
+      "seconds": 0.1045653860001039,
+      "status": "STABLE_WITH_REPORTED_ISSUES"
+    }
+  ]
+}

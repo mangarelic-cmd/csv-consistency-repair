@@ -1,0 +1,38 @@
+[
+  {
+    "rows": 48,
+    "seconds": 0.2947491129998525,
+    "edits": 1,
+    "exact": true,
+    "status": "PASS",
+    "forward": true,
+    "inverse": true
+  },
+  {
+    "rows": 400,
+    "seconds": 1.676230162000138,
+    "edits": 1,
+    "exact": true,
+    "status": "PASS",
+    "forward": true,
+    "inverse": true
+  },
+  {
+    "rows": 800,
+    "seconds": 1.7828521559986257,
+    "edits": 1,
+    "exact": true,
+    "status": "PASS",
+    "forward": true,
+    "inverse": true
+  },
+  {
+    "rows": 2000,
+    "seconds": 2.294717414999468,
+    "edits": 1,
+    "exact": true,
+    "status": "PASS",
+    "forward": true,
+    "inverse": true
+  }
+]

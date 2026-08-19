@@ -1,0 +1,109 @@
+{
+  "tool": "csv-consistency-repair",
+  "version": "0.4.0",
+  "input": "examples/declared_rules/customers.csv",
+  "output": "examples/declared_rules/repaired_bundle/customers.repaired.csv",
+  "config": {
+    "remove_exact_duplicates": false,
+    "normalize_null_markers": false,
+    "normalize_booleans": false,
+    "max_cycles": 8,
+    "stable_cycles_required": 2,
+    "dry_run": false,
+    "rules_path": null,
+    "discover_relationships": false,
+    "repair_discovered_relationships": false,
+    "discovery_min_rows": 12,
+    "discovery_min_group_support": 3,
+    "discovery_confidence": 0.95,
+    "discovery_min_coverage": 0.5,
+    "discovery_stress_tolerance": 0.05
+  },
+  "input_file_sha256": "12e66cf931d803e7d54e6cc68bce5c6a217a63c1e3c4ba276eea6317d747090e",
+  "format_contract": {
+    "input": {
+      "encoding": "utf-8",
+      "utf8_bom": false,
+      "delimiter": ",",
+      "quotechar": "\"",
+      "doublequote": false,
+      "escapechar": null,
+      "lineterminator": "\n"
+    },
+    "output": {
+      "encoding": "utf-8",
+      "utf8_bom": false,
+      "delimiter": ",",
+      "quotechar": "\"",
+      "doublequote": false,
+      "escapechar": null,
+      "lineterminator": "\n"
+    },
+    "preservation_pass": true,
+    "strict_csv_parse": true
+  },
+  "dialect": {
+    "delimiter": ",",
+    "quotechar": "\"",
+    "doublequote": false,
+    "escapechar": null,
+    "lineterminator": "\n"
+  },
+  "input_logical_digest": "04961756054fd664b2267109adc724afb8f61ffc6246d7a2f02e842d303cec3f",
+  "output_logical_digest": "04961756054fd664b2267109adc724afb8f61ffc6246d7a2f02e842d303cec3f",
+  "initial_score": 0.0,
+  "final_score": 0.0,
+  "score_delta": 0.0,
+  "strong_stable": true,
+  "stable_streak": 2,
+  "final_status": "PASS",
+  "committed_edits": [],
+  "rejected_candidates": [],
+  "cycles": [
+    {
+      "cycle": 1,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 1
+    },
+    {
+      "cycle": 2,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 2
+    }
+  ],
+  "relationship_discovery": {
+    "enabled": false,
+    "relationship_count": 0,
+    "stable_relationships": 0,
+    "unstable_relationships": 0,
+    "relationships": [],
+    "unique_key_candidates": []
+  },
+  "closure": {
+    "configured_scope_clean": true,
+    "two_cycle_stability_pass": true,
+    "forward_replay_pass": true,
+    "inverse_roundtrip_pass": true,
+    "format_preservation_pass": true,
+    "relationship_stability_checked": false,
+    "stable_discovered_relationships": 0,
+    "unstable_discovered_relationships": 0,
+    "certified_for_configured_scope": true
+  },
+  "remaining_issues": [],
+  "output_file_sha256": "12e66cf931d803e7d54e6cc68bce5c6a217a63c1e3c4ba276eea6317d747090e"
+}
