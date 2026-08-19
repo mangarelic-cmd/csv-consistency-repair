@@ -3,7 +3,7 @@
   "date": "2026-08-19",
   "source_tests": 109,
   "installed_wheel_tests": 109,
-  "wheel_sha256": "95992b34cb0f254aa9eab67b49597eee177238bc361bd5d4edec173ae994151f",
+  "wheel_sha256": "891abedd4c93b2b7c949ab713a6f923dfd880415a551f8c7d79b89a3ae88f74b",
   "wheel_record_hashed_entries_checked": 34,
   "wheel_record_failures": 0,
   "deterministic_wheel_double_build": true,
@@ -144,13 +144,21 @@
   },
   "portable_benchmark_lock_sha256": "5c7849d4a326251ec787857177dd7be3d090578bbf1e994e86d0f4a87e38ec7a",
   "critical_files": {
-    "pyproject.toml": "d0e17274f24d9c9ad4eb56dcf6d68d3addebdb402b25e1357b2d03228b077a43",
+    "pyproject.toml": "3b0a8158f971d1657e99037c8a33cafc1e5677749a0dd5ea0651522955a7b55d",
     "README.md": "d5dc7995fbfaad12a307f433f1e6040f31132fdb7757a0c79d0ae0d801df3189",
     "AUTHOR.md": "696603e3bc9a08760818c6c3abd2026b89ae5d1afe31a24b6d695c61861e6f3c",
     "GUIDE_LLM.md": "372bb9498eb7a6a7ee1e76c309ff5f2a363231093251aa7cd1837bc87dabd678",
     "GUIDE_HUMAN.md": "cbf60abe5507d681f87ddb44da81224dc933c01ff3f9e2e0bf9205d669b0c61c",
     "LICENSE": "a43a56270a5d195280516326d91dbb8a9b9461d7fcd245ef19b270b08d5b73ce",
     "CITATION.cff": "631b6790c13d15c34cfb78dc927f68e81a8cc15d38d474ae9f5a3a77e710b20d",
-    "RELEASE_CHECKLIST.md": "0e11eb8b4839af4847fa7ae7308dea3f1ce0a67957d47b6f341714850ed83895"
+    "RELEASE_CHECKLIST.md": "1b027bad0ac8123aafb10ca8143eba13223c80e8713260cc5cf8c17b74c472f0"
+  },
+  "wheel_filename": "csv_consistency_repair-1.3.5-py3-none-any.whl",
+  "github_repository": "https://github.com/mangarelic-cmd/csv-consistency-repair",
+  "github_ci_matrix": {
+    "python_3_10": "PASS",
+    "python_3_11": "PASS",
+    "python_3_12": "PASS",
+    "python_3_13": "PASS"
   }
 }
