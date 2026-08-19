@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,7 @@ version = "1.3.5"
 description = "Conservative automatic CSV repair with formula discovery, missing-value recovery, reversible edits, multi-file reconciliation, and replay verification."
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = "MIT"
 authors = [{name = "Son D. Bolduc"}]
 keywords = [
   "csv", "data-cleaning", "data-repair", "data-quality", "schema-validation",
@@ -19,7 +19,6 @@ classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
@@ -29,6 +28,11 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mangarelic-cmd/csv-consistency-repair"
+Repository = "https://github.com/mangarelic-cmd/csv-consistency-repair"
+Issues = "https://github.com/mangarelic-cmd/csv-consistency-repair/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7", "build>=1", "twine>=5", "tomli>=2; python_version < '3.11'"]
