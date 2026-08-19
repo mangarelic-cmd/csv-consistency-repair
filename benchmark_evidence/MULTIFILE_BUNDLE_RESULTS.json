@@ -1,0 +1,62 @@
+{
+  "summary": {
+    "cases": 5,
+    "tool_exact_rate": 1.0,
+    "pandas_available": true,
+    "pandas_configured_exact_rate": 1.0,
+    "tool_mean_s": 0.03216612659998645,
+    "pandas_mean_s": 0.003465661000154796
+  },
+  "cases": [
+    {
+      "case": 0,
+      "tool_exact": true,
+      "tool_seconds": 0.032870907001779415,
+      "tool_edits": 15,
+      "tool_atomic_commit": "COMMITTED",
+      "pandas_available": true,
+      "pandas_exact": true,
+      "pandas_seconds": 0.004366249999293359
+    },
+    {
+      "case": 1,
+      "tool_exact": true,
+      "tool_seconds": 0.027628988998912973,
+      "tool_edits": 15,
+      "tool_atomic_commit": "COMMITTED",
+      "pandas_available": true,
+      "pandas_exact": true,
+      "pandas_seconds": 0.002948165001726011
+    },
+    {
+      "case": 2,
+      "tool_exact": true,
+      "tool_seconds": 0.027779041998655885,
+      "tool_edits": 15,
+      "tool_atomic_commit": "COMMITTED",
+      "pandas_available": true,
+      "pandas_exact": true,
+      "pandas_seconds": 0.002908876000219607
+    },
+    {
+      "case": 3,
+      "tool_exact": true,
+      "tool_seconds": 0.04161694100002933,
+      "tool_edits": 15,
+      "tool_atomic_commit": "COMMITTED",
+      "pandas_available": true,
+      "pandas_exact": true,
+      "pandas_seconds": 0.003836313000647351
+    },
+    {
+      "case": 4,
+      "tool_exact": true,
+      "tool_seconds": 0.030934754000554676,
+      "tool_edits": 15,
+      "tool_atomic_commit": "COMMITTED",
+      "pandas_available": true,
+      "pandas_exact": true,
+      "pandas_seconds": 0.0032687009988876525
+    }
+  ]
+}

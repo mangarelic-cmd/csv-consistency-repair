@@ -1,0 +1,1 @@
+{"datasets": [{"name": "customers", "input": "customers.csv"}, {"name": "orders", "input": "orders.csv", "rules": "orders.rules.json", "output": "orders.repaired.csv"}]}

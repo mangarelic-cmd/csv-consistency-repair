@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include AUTHOR.md
+include GUIDE_HUMAN.md
+include GUIDE_LLM.md
+include CHANGELOG.md
+include SECURITY.md
+include CONTRIBUTING.md
+include CITATION.cff
+recursive-include src/csv_consistency_repair py.typed *.md
+recursive-exclude * __pycache__ *.py[cod]

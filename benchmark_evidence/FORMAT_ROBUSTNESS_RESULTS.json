@@ -1,0 +1,3056 @@
+{
+  "summary": {
+    "cases": 160,
+    "tool_parse_success": 160,
+    "tool_logical_roundtrip": 160,
+    "tool_zero_edit": 160,
+    "tool_format_preservation": 160,
+    "pandas_available": true,
+    "pandas_parse_success": 160,
+    "pandas_logical_parse": 103,
+    "tool_total_s": 0.22858445699966978,
+    "pandas_total_s": 0.1547616710067814
+  },
+  "cases": [
+    {
+      "id": 0,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.002209248999861302,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0024001120000320952,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 1,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013831529995513847,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010287460008839844,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 2,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001334240001597209,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008792149983491981,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 3,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013255569992907112,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001019151999571477,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 4,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0016209660007007187,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009164799994323403,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 5,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013181560007069493,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008811179995973362,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 6,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013322470003913622,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008807869999145623,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 7,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012948719995620195,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010074349993374199,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 8,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014370129993039882,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008682590014359448,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 9,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014275290013756603,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009100600000238046,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 10,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0018790789999911794,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009743250011524651,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 11,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013412400003289804,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009786419996089535,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 12,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001451793999876827,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008596759998908965,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 13,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014892400013195584,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008579130008001812,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 14,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013690420000784798,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008664460001455154,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 15,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013455259995680535,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009725140007503796,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 16,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014055259998713154,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008474269998259842,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 17,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013376449987845263,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008398369991482468,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 18,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013683710003533633,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009129949994530762,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 19,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013061680001555942,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010095380002894672,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 20,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014615690015489236,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008478780000586994,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 21,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013481309997587232,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008844829990266589,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 22,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012995189990760991,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008827500005281763,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 23,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013513449994206894,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009609059998183511,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 24,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014700909996463452,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000901428000361193,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 25,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012977559999853838,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008815889996185433,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 26,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013398079991020495,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008634320001874585,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 27,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013594269985333085,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.00098851700022351,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 28,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001410422999470029,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009040510012710001,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 29,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015143569999054307,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001046723000399652,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 30,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001542639000035706,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009345369999209652,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 31,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013239750005595852,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0011285040000075242,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 32,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014594659987778869,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001181012999950326,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 33,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015656739997211844,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008620089993200963,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 34,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015031799994176254,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010415449996798998,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 35,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014146690009511076,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0040825079995556735,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 36,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015563190008833772,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.00087054200048442,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 37,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012927879997732816,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008755800008657388,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 38,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013297440000314964,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008464359998470172,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 39,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013643550009874161,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009828080001170747,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 40,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013978139995742822,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008907720002753194,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 41,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013201589990785578,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009630090007703984,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 42,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013459170004352927,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008909320004022447,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 43,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013207389984017937,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0014023500007169787,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 44,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0019864180012518773,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009230799987562932,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 45,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013670080006704666,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001027064001391409,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 46,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013802480007143458,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008960099985415582,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 47,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014948480002203723,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001011030000881874,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 48,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015150580002227798,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009746570012794109,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 49,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001534856999569456,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008939560011640424,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 50,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001288882000153535,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000883410999449552,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 51,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013266690002637915,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009595440005796263,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 52,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015361899986601202,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009029699995153351,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 53,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012924380007461878,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008895510000002105,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 54,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001314982000621967,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008533759992133128,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 55,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001353839001239976,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010063930003525456,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 56,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013979140003357315,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010795119997055735,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 57,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014147199999570148,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008726250016479753,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 58,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013492620000761235,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008602170000813203,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 59,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001290944999709609,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009983109994209372,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 60,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014262370004871627,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008430910002061864,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 61,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013204189999669325,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008732259993848857,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 62,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012875610009359661,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009015579998958856,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 63,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001346918999843183,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009829079990595346,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 64,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014384939986484824,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008875880012055859,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 65,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012945209982717643,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008848229990690015,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 66,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013755309992120601,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008647329996165354,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 67,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001501128001109464,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010208549992967164,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 68,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014340580000862246,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008989939997263718,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 69,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0016616960001556436,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008571119997213827,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 70,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0016039599995565368,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0011291549999441486,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 71,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014973819997976534,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009847509991232073,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 72,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014355500006786315,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008560499991290271,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 73,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0019362330003787065,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008883980008249637,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 74,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013974539997434476,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009093589997064555,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 75,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001291706999836606,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001009928999337717,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 76,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014642629994341405,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008525350003765197,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 77,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013498729986167746,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009165900009975303,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 78,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012930289994983468,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008328160001838114,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 79,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001323274000242236,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009635900005378062,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 80,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014723750009579817,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009133450002991594,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 81,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001410323000527569,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008928950010158587,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 82,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013457669992931187,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009873460003291257,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 83,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001363142000627704,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010187610005232273,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 84,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014164519998303149,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009016980002343189,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 85,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013361729997996008,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009597839998605195,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 86,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015590839993819827,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008882279998942977,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 87,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012982759999431437,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001025010999001097,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 88,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0019753710002987646,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0015906499993434409,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 89,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0020834220013057347,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000882439999259077,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 90,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013404900000750786,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009871349993773038,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 91,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013015509994147578,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009931829990819097,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 92,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015256240003509447,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0012559229999169474,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 93,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014310740007204004,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008579429995734245,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 94,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013498629996320233,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009761890014488017,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 95,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013202789996284992,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010142049995920388,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 96,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015831489999982296,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008654040011606412,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 97,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001355420999971102,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010601430003589485,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 98,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013091430009808391,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009009870009322185,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 99,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001420206999682705,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000966134000918828,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 100,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014656950006610714,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009754880011314526,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 101,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013310250014910707,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009003359991766047,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 102,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014729360009368975,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0012079219995939638,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 103,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013755510008195415,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010685760007618228,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 104,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014191359987307806,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008587749998696381,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 105,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014695310001116013,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008522349999111611,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 106,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013686809998034732,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008731350008019945,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 107,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013025930002186215,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009642009990784572,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 108,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015643810002075043,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008668269983900245,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 109,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014487300013570348,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008781630003795726,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 110,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013808589992549969,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008623900012025842,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 111,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001435039999705623,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009665540001151385,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 112,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015597849996993318,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008778120009083068,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 113,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013540090003516525,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008840919999784091,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 114,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0012936790008097887,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008470669999951497,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 115,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013489119992300402,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009722419999889098,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 116,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014710019986523548,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008516839989169966,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 117,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001315993000389426,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008458250013063662,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 118,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013773230002698256,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008522650005033938,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 119,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013033340001129545,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001005921998512349,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 120,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001452364998840494,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008745079994696425,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 121,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013561919986386783,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008486690003337571,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 122,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013036149994150037,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009215080008289078,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 123,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013335189996723784,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000962358000833774,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 124,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001653293000345002,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008600260007369798,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 125,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013127679994795471,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008935860005294671,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 126,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.00132917299924884,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008408169996982906,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 127,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001353437999568996,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009871040001598885,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 128,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001686792998953024,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008773619993007742,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 129,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001326248000623309,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008666560006531654,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 130,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013473399994836655,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008664760007377481,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 131,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013069099986751098,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009978299985959893,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 132,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014661959994555218,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008416889995714882,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 133,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.001340128999800072,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008742669997445773,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 134,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013055770014034351,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008857539996824926,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 135,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014542280005116481,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000991070999589283,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 136,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.002029290999416844,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008898600008251378,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 137,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015131260006455705,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009174919996439712,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 138,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013091529999655904,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009890780002024258,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 139,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013525169997592457,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000966895000601653,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 140,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015657940002711257,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009026289990288205,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 141,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.00132191099874035,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009758380001585465,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 142,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013688910003111232,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008560000005672919,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 143,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015171409995673457,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0010160970014112536,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 144,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015301510011340724,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000892865000423626,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 145,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013616609994642204,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008651239986647852,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 146,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015158700007305015,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008855639989633346,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 147,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014195470012055011,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001017610000417335,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 148,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014727449997735675,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009400449998793192,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 149,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0015846309997868957,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000863772000229801,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 150,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014778029999433784,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009072470002138289,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 151,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013055470008112025,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0011135120003018528,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 152,
+      "delimiter": "','",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014672569996037055,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.000986282999292598,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 153,
+      "delimiter": "';'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014265770005295053,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009017480006150436,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 154,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\n'",
+      "bom": true,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014323560008051572,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009745770003064536,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 155,
+      "delimiter": "'|'",
+      "lineterminator": "'\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013626330000988673,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.001073333000022103,
+        "logical_pass": false
+      }
+    },
+    {
+      "id": 156,
+      "delimiter": "','",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014814089990977664,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008611680004833033,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 157,
+      "delimiter": "';'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0014356899991980754,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0008939460003603017,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 158,
+      "delimiter": "'\\t'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013100939995638328,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009517719990981277,
+        "logical_pass": true
+      }
+    },
+    {
+      "id": 159,
+      "delimiter": "'|'",
+      "lineterminator": "'\\r\\n'",
+      "bom": false,
+      "tool": {
+        "ok": true,
+        "seconds": 0.0013494530012394534,
+        "logical_pass": true,
+        "edits": 0,
+        "format_preservation": true
+      },
+      "pandas": {
+        "available": true,
+        "ok": true,
+        "seconds": 0.0009658729995862814,
+        "logical_pass": false
+      }
+    }
+  ]
+}

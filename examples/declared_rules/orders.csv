@@ -1,0 +1,7 @@
+order_id,customer_id,country,subtotal,tax,total,length
+O1,C1,CA,10,2,99,100 cm
+O2,C1,CA,5,1,6,2 m
+O3,C1,US,4,1,5,300 cm
+O4,C2,US,7,2,9,1 m
+O5,C2,US,8,2,10,2 m
+O6,C2,US,9,2,11,3 m

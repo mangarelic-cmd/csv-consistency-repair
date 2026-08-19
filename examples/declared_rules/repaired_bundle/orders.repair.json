@@ -1,0 +1,307 @@
+{
+  "tool": "csv-consistency-repair",
+  "version": "0.4.0",
+  "input": "examples/declared_rules/orders.csv",
+  "output": "examples/declared_rules/repaired_bundle/orders.repaired.csv",
+  "config": {
+    "remove_exact_duplicates": false,
+    "normalize_null_markers": false,
+    "normalize_booleans": false,
+    "max_cycles": 8,
+    "stable_cycles_required": 2,
+    "dry_run": false,
+    "rules_path": "examples/declared_rules/orders.rules.json",
+    "discover_relationships": false,
+    "repair_discovered_relationships": false,
+    "discovery_min_rows": 12,
+    "discovery_min_group_support": 3,
+    "discovery_confidence": 0.95,
+    "discovery_min_coverage": 0.5,
+    "discovery_stress_tolerance": 0.05
+  },
+  "input_file_sha256": "55d8defe79cd2cb90e89346d1b2d4c5707ba83505e7117329a359d82b77d160e",
+  "format_contract": {
+    "input": {
+      "encoding": "utf-8",
+      "utf8_bom": false,
+      "delimiter": ",",
+      "quotechar": "\"",
+      "doublequote": false,
+      "escapechar": null,
+      "lineterminator": "\n"
+    },
+    "output": {
+      "encoding": "utf-8",
+      "utf8_bom": false,
+      "delimiter": ",",
+      "quotechar": "\"",
+      "doublequote": false,
+      "escapechar": null,
+      "lineterminator": "\n"
+    },
+    "preservation_pass": true,
+    "strict_csv_parse": true
+  },
+  "dialect": {
+    "delimiter": ",",
+    "quotechar": "\"",
+    "doublequote": false,
+    "escapechar": null,
+    "lineterminator": "\n"
+  },
+  "input_logical_digest": "fac077bd70b293b759be5f783d3edc777948b432f2f2e490a41ece02cbc83b26",
+  "output_logical_digest": "3931ac27896a234b6e6004e06c1723d44454f97c62a93eed1649102b49400f60",
+  "initial_score": 15.0,
+  "final_score": 0.0,
+  "score_delta": -15.0,
+  "strong_stable": true,
+  "stable_streak": 2,
+  "final_status": "PASS",
+  "committed_edits": [
+    {
+      "candidate_id": "2480ef62edfee35b",
+      "analyzer": "declared_rules",
+      "operation": "set_cell",
+      "reason": "Convert a declared unit alias to the declared canonical unit.",
+      "cost": 1,
+      "confidence": 1.0,
+      "row": 0,
+      "column": 6,
+      "old_value": "100 cm",
+      "new_value": "1 m",
+      "old_row": null,
+      "reversible": true,
+      "metadata": {
+        "rule_index": 0,
+        "rule_type": "units"
+      },
+      "decision": "committed_certified_batch",
+      "batch_id": "af1d0e29454e43eb",
+      "batch_size": 4,
+      "score_before": 15.0,
+      "score_after": 0.0
+    },
+    {
+      "candidate_id": "abfd6b218cd6f8d8",
+      "analyzer": "declared_rules",
+      "operation": "set_cell",
+      "reason": "Recompute a declared row formula.",
+      "cost": 1,
+      "confidence": 1.0,
+      "row": 0,
+      "column": 5,
+      "old_value": "99",
+      "new_value": "12",
+      "old_row": null,
+      "reversible": true,
+      "metadata": {
+        "rule_index": 0,
+        "rule_type": "row_formula"
+      },
+      "decision": "committed_certified_batch",
+      "batch_id": "af1d0e29454e43eb",
+      "batch_size": 4,
+      "score_before": 15.0,
+      "score_after": 0.0
+    },
+    {
+      "candidate_id": "dcd3939ce58ba54b",
+      "analyzer": "declared_rules",
+      "operation": "set_cell",
+      "reason": "Convert a declared unit alias to the declared canonical unit.",
+      "cost": 1,
+      "confidence": 1.0,
+      "row": 2,
+      "column": 6,
+      "old_value": "300 cm",
+      "new_value": "3 m",
+      "old_row": null,
+      "reversible": true,
+      "metadata": {
+        "rule_index": 0,
+        "rule_type": "units"
+      },
+      "decision": "committed_certified_batch",
+      "batch_id": "af1d0e29454e43eb",
+      "batch_size": 4,
+      "score_before": 15.0,
+      "score_after": 0.0
+    },
+    {
+      "candidate_id": "57bef0ee2f1be528",
+      "analyzer": "declared_rules",
+      "operation": "set_cell",
+      "reason": "Repair a declared functional-dependency outlier using an unambiguous local majority.",
+      "cost": 1,
+      "confidence": 0.6666666666666666,
+      "row": 2,
+      "column": 2,
+      "old_value": "US",
+      "new_value": "CA",
+      "old_row": null,
+      "reversible": true,
+      "metadata": {
+        "rule_index": 0,
+        "rule_type": "functional_dependency"
+      },
+      "decision": "committed_certified_batch",
+      "batch_id": "af1d0e29454e43eb",
+      "batch_size": 4,
+      "score_before": 15.0,
+      "score_after": 0.0
+    }
+  ],
+  "rejected_candidates": [],
+  "cycles": [
+    {
+      "cycle": 1,
+      "score_before": 15.0,
+      "score_after": 0.0,
+      "issue_count_before": 4,
+      "issue_count_after": 0,
+      "candidate_count": 4,
+      "accepted": [
+        {
+          "candidate_id": "2480ef62edfee35b",
+          "analyzer": "declared_rules",
+          "operation": "set_cell",
+          "reason": "Convert a declared unit alias to the declared canonical unit.",
+          "cost": 1,
+          "confidence": 1.0,
+          "row": 0,
+          "column": 6,
+          "old_value": "100 cm",
+          "new_value": "1 m",
+          "old_row": null,
+          "reversible": true,
+          "metadata": {
+            "rule_index": 0,
+            "rule_type": "units"
+          },
+          "decision": "committed_certified_batch",
+          "batch_id": "af1d0e29454e43eb",
+          "batch_size": 4,
+          "score_before": 15.0,
+          "score_after": 0.0
+        },
+        {
+          "candidate_id": "abfd6b218cd6f8d8",
+          "analyzer": "declared_rules",
+          "operation": "set_cell",
+          "reason": "Recompute a declared row formula.",
+          "cost": 1,
+          "confidence": 1.0,
+          "row": 0,
+          "column": 5,
+          "old_value": "99",
+          "new_value": "12",
+          "old_row": null,
+          "reversible": true,
+          "metadata": {
+            "rule_index": 0,
+            "rule_type": "row_formula"
+          },
+          "decision": "committed_certified_batch",
+          "batch_id": "af1d0e29454e43eb",
+          "batch_size": 4,
+          "score_before": 15.0,
+          "score_after": 0.0
+        },
+        {
+          "candidate_id": "dcd3939ce58ba54b",
+          "analyzer": "declared_rules",
+          "operation": "set_cell",
+          "reason": "Convert a declared unit alias to the declared canonical unit.",
+          "cost": 1,
+          "confidence": 1.0,
+          "row": 2,
+          "column": 6,
+          "old_value": "300 cm",
+          "new_value": "3 m",
+          "old_row": null,
+          "reversible": true,
+          "metadata": {
+            "rule_index": 0,
+            "rule_type": "units"
+          },
+          "decision": "committed_certified_batch",
+          "batch_id": "af1d0e29454e43eb",
+          "batch_size": 4,
+          "score_before": 15.0,
+          "score_after": 0.0
+        },
+        {
+          "candidate_id": "57bef0ee2f1be528",
+          "analyzer": "declared_rules",
+          "operation": "set_cell",
+          "reason": "Repair a declared functional-dependency outlier using an unambiguous local majority.",
+          "cost": 1,
+          "confidence": 0.6666666666666666,
+          "row": 2,
+          "column": 2,
+          "old_value": "US",
+          "new_value": "CA",
+          "old_row": null,
+          "reversible": true,
+          "metadata": {
+            "rule_index": 0,
+            "rule_type": "functional_dependency"
+          },
+          "decision": "committed_certified_batch",
+          "batch_id": "af1d0e29454e43eb",
+          "batch_size": 4,
+          "score_before": 15.0,
+          "score_after": 0.0
+        }
+      ],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 0
+    },
+    {
+      "cycle": 2,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 1
+    },
+    {
+      "cycle": 3,
+      "score_before": 0.0,
+      "score_after": 0.0,
+      "issue_count_before": 0,
+      "issue_count_after": 0,
+      "candidate_count": 0,
+      "accepted": [],
+      "rejected": [],
+      "structural_signature": "bbf5bf3ff31dc30f2f55d67b095a0e5063c3ca48db3139d0148180ad2a92c6a2",
+      "stable_streak": 2
+    }
+  ],
+  "relationship_discovery": {
+    "enabled": false,
+    "relationship_count": 0,
+    "stable_relationships": 0,
+    "unstable_relationships": 0,
+    "relationships": [],
+    "unique_key_candidates": []
+  },
+  "closure": {
+    "configured_scope_clean": true,
+    "two_cycle_stability_pass": true,
+    "forward_replay_pass": true,
+    "inverse_roundtrip_pass": true,
+    "format_preservation_pass": true,
+    "relationship_stability_checked": false,
+    "stable_discovered_relationships": 0,
+    "unstable_discovered_relationships": 0,
+    "certified_for_configured_scope": true
+  },
+  "remaining_issues": [],
+  "output_file_sha256": "f3cd5a15dfb75b52988985c392cdce29e8a1a59e8dc3eaa1a801a536d5cd93ca"
+}
