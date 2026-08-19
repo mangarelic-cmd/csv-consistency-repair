@@ -1,8 +1,8 @@
 name: Deploy verified release
 
 on:
-  issues:
-    types: [opened]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -10,12 +10,13 @@ permissions:
 
 jobs:
   deploy:
-    if: github.event_name == 'workflow_dispatch' || github.event.issue.title == '[DEPLOY] csv-consistency-repair 1.3.5'
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'release-1.3.5'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout release branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref || 'main' }}
           fetch-depth: 0
 
       - name: Verify uploaded release archive
@@ -49,7 +50,8 @@ jobs:
           assert csv_consistency_repair.__version__ == '1.3.5'
           PY
 
-      - name: Publish materialized source tree to main
+      - name: Commit materialized source to release branch
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
@@ -59,4 +61,4 @@ jobs:
           git add -A
           git diff --cached --quiet && exit 0
           git commit -m "Release 1.3.5"
-          git push origin HEAD:main
+          git push origin HEAD:${{ github.head_ref }}
