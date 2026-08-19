@@ -9,6 +9,7 @@
 - Removed duplicated attribution details from the README so `AUTHOR.md` is the single explicit project-reference note.
 - Refreshed release metadata, Python 3.13 CI/classifier coverage, release checklist, citation metadata, source-manifest rules, and repository ignore rules.
 - Removed stale absolute development paths from committed example reports.
+- Fixed the release verification test on Python 3.10 by using `tomli` as the compatibility fallback for stdlib `tomllib`; the repair engine itself is unchanged.
 
 ## 1.3.4
 

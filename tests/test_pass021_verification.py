@@ -2,8 +2,12 @@ from __future__ import annotations
 
 import csv
 import json
-import tomllib
 from pathlib import Path
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 
 import csv_consistency_repair as ccr
 from csv_consistency_repair import RepairConfig, repair

@@ -31,7 +31,7 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=7", "build>=1", "twine>=5"]
+dev = ["pytest>=7", "build>=1", "twine>=5", "tomli>=2; python_version < '3.11'"]
 benchmark = ["pandas>=2"]
 
 [project.scripts]
