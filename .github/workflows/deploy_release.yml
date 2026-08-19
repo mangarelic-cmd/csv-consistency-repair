@@ -1,8 +1,8 @@
 name: Deploy verified release
 
 on:
-  push:
-    branches: [main]
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 permissions:
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy:
-    if: github.actor != 'github-actions[bot]'
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.title == '[DEPLOY] csv-consistency-repair 1.3.5'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
